@@ -1,0 +1,79 @@
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.expectationItem {
+  background: #f8f9ff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.itemLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.itemTitle {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.itemDesc {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.rateGroup {
+  font-size: 1.5rem;
+}
+
+.radioGroup {
+  width: 100%;
+}
+
+.radioGroup :global(.ant-radio-wrapper) {
+  padding: 0.8rem;
+  width: 100%;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin-right: 0;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.radioGroup :global(.ant-radio-wrapper:hover) {
+  border-color: #1890ff;
+  background: #f0f7ff;
+}
+
+.radioGroup :global(.ant-radio-wrapper-checked) {
+  border-color: #1890ff;
+  background: #e6f7ff;
+}
+
+@media screen and (max-width: 768px) {
+  .expectationItem {
+    padding: 1rem;
+  }
+
+  .itemTitle {
+    font-size: 1rem;
+  }
+
+  .itemDesc {
+    font-size: 0.8rem;
+  }
+
+  .rateGroup {
+    font-size: 1.2rem;
+  }
+
+  .radioGroup :global(.ant-radio-wrapper) {
+    padding: 0.6rem;
+  }
+} 

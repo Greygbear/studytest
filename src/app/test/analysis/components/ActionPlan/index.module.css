@@ -1,0 +1,176 @@
+.actionPlan {
+  width: 100%;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.progress {
+  margin-bottom: 2rem;
+}
+
+.progressBar {
+  width: 100%;
+  height: 8px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progressFill {
+  height: 100%;
+  background: #1890ff;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.progressText {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  transition: all 0.3s ease;
+}
+
+.item:hover {
+  border-color: #1890ff;
+  box-shadow: 0 2px 8px rgba(24, 144, 255, 0.1);
+}
+
+.item.completed .content {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.checkbox {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.checkbox input:checked ~ .checkmark {
+  background: #1890ff;
+  border-color: #1890ff;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.content {
+  flex: 1;
+  margin-right: 1rem;
+  color: #333;
+}
+
+.reminder {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #666;
+  font-size: 0.9rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.reminder:focus {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.reminder::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.reminder::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .progress {
+    margin-bottom: 1.5rem;
+  }
+
+  .progressBar {
+    height: 6px;
+  }
+
+  .item {
+    padding: 0.8rem;
+  }
+
+  .content {
+    font-size: 0.9rem;
+  }
+
+  .reminder {
+    width: 100%;
+    margin-top: 0.8rem;
+  }
+
+  .checkbox {
+    width: 18px;
+    height: 18px;
+  }
+
+  .checkmark {
+    width: 18px;
+    height: 18px;
+  }
+
+  .empty {
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+  }
+} 

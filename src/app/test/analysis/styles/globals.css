@@ -1,0 +1,8 @@
+.analysis-page {
+  min-height: 100vh;
+  background: #f5f5f5;
+  padding: 20px 0;
+}
+
+/* 确保antd样式正确加载 */
+@import 'antd/dist/reset.css'; 

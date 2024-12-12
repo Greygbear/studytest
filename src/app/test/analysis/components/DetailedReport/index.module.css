@@ -1,0 +1,302 @@
+.report {
+  width: 100%;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.sectionTitle {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.typeAnalysis {
+  background: #f8f9ff;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.typeCard {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(24, 144, 255, 0.1);
+}
+
+.typeHeader {
+  font-size: 1.8rem;
+  color: #1890ff;
+  margin-bottom: 1rem;
+}
+
+.typeDescription {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.typeTraits {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.typeTrait {
+  padding: 0.5rem 1rem;
+  background: #e6f7ff;
+  color: #1890ff;
+  border-radius: 16px;
+  font-size: 0.9rem;
+}
+
+.category {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid #eee;
+  margin-bottom: 1.5rem;
+}
+
+.categoryTitle {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.traits {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.traitItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.traitInfo {
+  flex: 1;
+}
+
+.traitName {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.traitDescription {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.traitScore {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 200px;
+}
+
+.scoreBarContainer {
+  flex: 1;
+  height: 8px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.scoreBar {
+  height: 100%;
+  background: #1890ff;
+  border-radius: 4px;
+  transition: width 1s ease;
+}
+
+.scoreNumber {
+  min-width: 2.5rem;
+  color: #1890ff;
+  font-weight: 500;
+}
+
+.expertComments {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid #eee;
+}
+
+.expertInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.expertAvatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.expertCredentials h4 {
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
+.expertCredentials p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.comments {
+  color: #444;
+  line-height: 1.8;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    margin-bottom: 2rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* 性格类型解析部分 */
+  .typeAnalysis {
+    padding: 1rem;
+  }
+
+  .typeCard {
+    padding: 1rem;
+  }
+
+  .typeHeader {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .typeDescription {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .typeTraits {
+    justify-content: center;
+  }
+
+  .typeTrait {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  /* 特质分析部分 */
+  .category {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .categoryTitle {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .traitItem {
+    flex-direction: column;
+    gap: 0.8rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .traitItem:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .traitInfo {
+    width: 100%;
+  }
+
+  .traitName {
+    font-size: 0.95rem;
+  }
+
+  .traitDescription {
+    font-size: 0.85rem;
+  }
+
+  .traitScore {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .scoreBarContainer {
+    height: 6px;
+  }
+
+  /* 专家点评部分 */
+  .expertComments {
+    padding: 1rem;
+  }
+
+  .expertInfo {
+    align-items: center;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .expertAvatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .expertCredentials h4 {
+    font-size: 1rem;
+  }
+
+  .expertCredentials p {
+    font-size: 0.8rem;
+  }
+
+  .comments {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+}
+
+/* 添加平板设备的适配 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .typeAnalysis {
+    padding: 1.5rem;
+  }
+
+  .typeCard {
+    padding: 1.2rem;
+  }
+
+  .category {
+    padding: 1.2rem;
+  }
+
+  .traitItem {
+    gap: 1.5rem;
+  }
+
+  .traitScore {
+    min-width: 180px;
+  }
+} 
